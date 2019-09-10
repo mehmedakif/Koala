@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white">
+
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_weight="1"
+        android:background="@color/krem_arka"
+        android:contentDescription="@string/header_koala"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:srcCompat="@drawable/koala2" />
+
+    <Button
+        android:id="@+id/home_butonu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bar_differ"
+        android:drawableTop="@drawable/ic_home_black_24dp"
+        android:paddingTop="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <LinearLayout
+        android:id="@+id/donation_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/home_butonu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!--<TableRow
+            android:id="@+id/donate_fastfood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e52b2a2a"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/delivery_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/donate_meal"
+                android:padding="5sp"
+                app:srcCompat="@drawable/delivery" />
+
+            <TextView
+                android:id="@+id/delivery_text"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/market_donation"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bes_lira"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/bes_lira"
+                android:textColor="@color/money"
+                android:textSize="18sp" />
+
+        </TableRow> -->
+
+        <!--<TableRow
+            android:id="@+id/donate_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e52b2a2a"
+            android:gravity="center_horizontal|fill_horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/meal_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/meal_donation_img" />
+
+            <TextView
+                android:id="@+id/meal_text"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/meal_donation"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/ikibucuk_lira"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:radius="20dp"
+                android:text="@string/ikibucuk_lira"
+                android:textColor="@color/money"
+                android:textSize="18sp" />
+        </TableRow>-->
+
+        <TableRow
+            android:id="@+id/donate_tea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <Button
+                android:id="@+id/reklam_izle"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:text="@string/bir_lira"
+                android:textColor="@color/money"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </TableRow>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/version_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/version"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1435076129396602/2628086391"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"  />
+
+</android.support.constraint.ConstraintLayout>

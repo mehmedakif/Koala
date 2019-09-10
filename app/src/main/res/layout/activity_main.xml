@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|start|end|center_vertical|center_horizontal"
+    android:background="@color/background_white"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:theme="@style/AppTheme"
+    tools:context="com.example.akif.rahatla.MainActivity">
+
+
+    <!--<ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@color/bar_white"
+        android:contentDescription="@string/header"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:srcCompat="@mipmap/ic_launcher_foreground" />-->
+
+
+    <ImageView
+        android:id="@+id/help_screen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/help_screen"
+        android:visibility="invisible"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:srcCompat="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_weight="1"
+        android:background="@color/krem_arka"
+        android:contentDescription="@string/header_koala"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:srcCompat="@drawable/koala2" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="659dp"
+        android:gravity="center|bottom"
+        android:padding="0dp"
+        android:paddingStart="7dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="7dp"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="175dp">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/orman_satiri"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/holo_green_dark"
+                android:measureWithLargestChild="true"
+                android:minWidth="0dp"
+                android:visibility="visible">
+
+                <SeekBar
+                    android:id="@+id/orman_ses_seek"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:progressDrawable="@drawable/seekbar"
+                    android:theme="@style/SeekBar"
+                    android:thumb="@color/money"
+                    android:thumbOffset="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/orman_foto"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/orman_foto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background"
+                    android:contentDescription="@string/orman"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    ads:srcCompat="@drawable/woods2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/nehir_satiri"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="2dp"
+                android:background="#5595d4">
+
+                <ImageView
+                    android:id="@+id/nehir_foto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background"
+                    android:contentDescription="@string/nehir"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    ads:srcCompat="@drawable/river2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/nehir_ses_seek"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:progressDrawable="@drawable/seekbar"
+                    android:theme="@style/SeekBar"
+                    android:thumb="@color/sdfgsdfg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nehir_foto"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ates_satiri"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="2dp"
+                android:background="#3e3f40"
+                android:measureWithLargestChild="true"
+                android:minWidth="0dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ates_foto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/background"
+                    android:contentDescription="@string/ates"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    ads:srcCompat="@drawable/fire3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/ates_ses_seek"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seekbar"
+                    android:theme="@style/SeekBar"
+                    android:thumb="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ates_foto"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ney_satiri"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="2dp"
+                android:background="#b39274"
+                android:measureWithLargestChild="true"
+                android:minWidth="0dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ney_foto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/background"
+                    android:contentDescription="@string/ney"
+                    android:padding="13dp"
+                    android:scaleType="fitXY"
+                    ads:srcCompat="@drawable/ney"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/ney_ses_seek"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:progressDrawable="@drawable/seekbar"
+                    android:theme="@style/SeekBar"
+                    android:thumb="@color/colorPrimaryDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ney_foto"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/yagmur_satiri"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/rain_bg"
+                android:measureWithLargestChild="true"
+                android:minWidth="0dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/rain_foto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/background"
+                    android:contentDescription="@string/b"
+                    android:padding="12dp"
+                    android:paddingTop="14dp"
+                    android:scaleType="fitXY"
+                    ads:srcCompat="@drawable/rain2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/rain_ses_seek"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:progressDrawable="@drawable/seekbar"
+                    android:theme="@style/SeekBar"
+                    android:thumb="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/rain_foto"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/deniz_satiri"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dp"
+                android:background="@color/colorAccent"
+                android:measureWithLargestChild="true"
+                android:minWidth="0dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/sea_foto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/background"
+                    android:contentDescription="@string/c"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    ads:srcCompat="@drawable/sea"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/sea_ses_seek"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:progressDrawable="@drawable/seekbar"
+                    android:theme="@style/SeekBar"
+                    android:thumb="@android:color/transparent"
+                    ads:layout_constraintHorizontal_bias="1.0"
+                    ads:layout_constraintVertical_bias="0.469"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/sea_foto"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/thunder_satiri"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dp"
+                android:background="@color/thunder_bg"
+                android:measureWithLargestChild="true"
+                android:minWidth="0dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/thunder_foto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/background"
+                    android:contentDescription="@string/c"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    ads:srcCompat="@drawable/thunder"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/thunder_ses_seek"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:progressDrawable="@drawable/seekbar"
+                    android:theme="@style/SeekBar"
+                    android:thumb="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/thunder_foto"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.8" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </TableLayout>
+    </ScrollView>
+
+   <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1435076129396602/2592951124"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/bar_differ"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/yardim_butonu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_help_black_24dp"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toStartOf="@+id/durdur_butonu"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:srcCompat="@android:drawable/ic_menu_help" />
+
+        <Button
+            android:id="@+id/durdur_butonu"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_toEndOf="@+id/yardim_butonu"
+            android:background="@drawable/ic_pause_black_24dp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            ads:srcCompat="@android:drawable/ic_media_pause" />
+
+        <Button
+            android:id="@+id/ayar_butonu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/durdur_butonu"
+            android:background="@android:drawable/ic_menu_slideshow"
+            ads:layout_constraintStart_toEndOf="@+id/durdur_butonu"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "819840177553",
+    "firebase_url": "https://koala-rahatla.firebaseio.com",
+    "project_id": "koala-rahatla",
+    "storage_bucket": "koala-rahatla.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819840177553:android:612eb9a0147aee84",
+        "android_client_info": {
+          "package_name": "com.akif.koala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819840177553-862vfft7atu8hkl7kla1uh535v08ggk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akif.koala",
+            "certificate_hash": "d828e6a565ea90c9d16a4734f2ce7237df6eb7b3"
+          }
+        },
+        {
+          "client_id": "819840177553-uob2d1hcg7205t10h887ohd7ltm87npg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9TPw8-UfoyAw2xKCHaLhfBCIHUt0nTdE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819840177553-uob2d1hcg7205t10h887ohd7ltm87npg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-1435076129396602~1499361308"
+    }
+  ],
+  "configuration_version": "1"
+}

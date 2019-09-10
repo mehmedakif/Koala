@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#717951</color>
+    <color name="colorPrimaryDark">#ca000000</color>
+    <color name="colorAccent">#1f970e</color>
+    <color name="semi_white">#0dffffff</color>
+    <color name="bar_white">#ede2b091</color>
+    <color name="deneme">#00be221d</color>
+    <color name="sdfgsdfg">#ff00ff</color>
+    <color name="menu_transarent_dark">#d80d0d0d</color>
+    <color name="bar_differ">#f81e1e1e</color>
+    <color name="money">#fadd6000</color>
+    <color name="help_view">#a7464242</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="krem_arka">#e3d3c2</color>
+    <color name="background_white">#ffece0</color>
+    <color name="welcome_bg">#e2b091</color>
+    <color name="thunder_bg">#6a6a6a</color>
+    <color name="rain_bg">#1791c9</color>
+</resources>
